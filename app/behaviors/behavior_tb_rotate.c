@@ -7,7 +7,7 @@
 static int rotation_mode = 0; // 0°, 90°, 180°, 270°
 
 struct tb_rotate_behavior_config {
-    uint8_t button_idx; // SW1
+    uint8_t button_idx; // 回転切替用ボタン番号
 };
 
 struct tb_rotate_behavior_data {};
