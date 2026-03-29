@@ -18,9 +18,12 @@
 
         default_layer {
             bindings = <
-                // row0左から右へ（一番左のキーはリセットボタン）
-                &bt BT_NXT  &kp BACKSPACE  &kp SPACE  &kp ENTER
-                            &mkp MB3       &mkp LCLK  &mkp RCLK
+                TB_ROTATE    // SW1を回転切替
+                BTN_LEFT     // SW2
+                BTN_MIDDLE   // SW3
+                BTN_RIGHT    // SW4
+            >;
+        };
             >;
 	};
 
