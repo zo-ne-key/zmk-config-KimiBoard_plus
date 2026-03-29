@@ -97,4 +97,30 @@
     };
 };
 
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    behaviors {
+        tb_rotate: tb_rotate_behavior {
+            compatible = "zmk,behavior-tb-rotate";
+            button_idx = <0>; // SW1で回転切替
+        };
+    };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "KimiBoard Layout";
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
+
+        keys =
+             <&key_physical_attrs  50 100 0   0 0 0 0>   // SW1(回転切替)
+            ,<&key_physical_attrs 100 100 120 0 0 0 0>   // SW2
+            ,<&key_physical_attrs 100 100 240 0 0 0 0>   // SW3
+            ,<&key_physical_attrs 100 100 360 0 0 0 0>   // SW4
+            ;
+    };
+};
 
