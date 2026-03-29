@@ -27,7 +27,7 @@
     key_change_layer {
             bindings = <
                 &bt BT_NXT  &mkp MB3       &mkp LCLK  &mkp RCLK
-                            &kp SPACE  &kp BACKSPACE  &kp ENTER
+                            &kp ESCAPE  &kp BACKSPACE  &kp ENTER
         >;
     };
 
